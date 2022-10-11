@@ -51,6 +51,11 @@ console.log(getPlaylistLength({
 }))
 
 function getHardestHomework(assignments){
+
+      if(assignments.length === 0){
+        return '';
+      }
+
     let lowestHw = assignments[0]//object
 
     for(let i = 0; i < assignments.length; i++){
@@ -67,6 +72,11 @@ console.log(getHardestHomework([
     { name: 'objective-reasoning', averageScore: 25 }
 ]))
 
+console.log(getHardestHomework([]))
+
+   
+
+
 function createPhonebook(namesArray, numbersArray){
     
     let phonebook = {};
@@ -78,6 +88,8 @@ return phonebook
 }
 console.log(createPhonebook(['Jimothy', 'Maria', 'Karl'], ['123-456-7890', 
 '000-000-0000', '999-888-7766']))
+
+
    
 
 
